@@ -78,3 +78,106 @@ void task2(std::string filename) {
 
 
 }
+
+void task3_2(std::string filename) {
+  std::fstream file;
+  //A-Z => 65-90
+  //a-z => 97-122
+
+  file.open(
+      filename,
+      std::ios::in);  // open a file to perform read operation using file object
+  if (file.is_open()) {  // checking whether the file is open
+    std::string tp;
+    std::string first_elve, second_elve, third_elve;
+    char common_letter(0), common_letter_value(0);
+    int priority_sum(0);
+    while (getline(file, tp)) {
+      first_elve = tp;
+      getline(file, second_elve);
+      getline(file, third_elve);
+      bool found_common_letter = false;
+
+      
+      for (std::string::const_iterator n = first_elve.cbegin();
+           n != first_elve.cend(); n++) {
+        if (found_common_letter) {   
+            break;
+        }
+        for (std::string::const_iterator m = second_elve.cbegin();
+             m != second_elve.cend(); m++)
+          if (*n == *m) {
+            if (found_common_letter) {
+                break;
+            }
+            for (std::string::const_iterator k = third_elve.cbegin();
+                 k != third_elve.cend(); k++) {
+              if (*m == *k) {
+                common_letter = *k;
+                found_common_letter = true;
+                break;
+              }
+            }
+          }
+      }
+      if (int(common_letter) < 91)
+        common_letter_value = int(common_letter) - 38;
+      else {
+        common_letter_value = int(common_letter) - 96;
+      }      
+    }
+    
+    std::cout << "Part 2: " << priority_sum << std::endl; //print solution
+    file.close();
+  }
+}
+void task3_1(std::string filename) {
+  std::fstream file;
+  // A-Z => 65-90
+  // a-z => 97-122
+
+  file.open(
+      filename,
+      std::ios::in);  // open a file to perform read operation using file object
+  if (file.is_open()) {  // checking whether the file is open
+    std::string tp;
+    std::string first_half, second_half;
+    char common_letter(0), common_letter_value(0);
+    int lenght(0), priority_sum(0);
+    while (getline(file, tp)) {
+      lenght = tp.length();
+      first_half.clear();
+      second_half.clear();
+      bool found_common_letter = false;
+      for (int i(0); i < lenght / 2; i++) {
+        first_half.push_back(tp[i]);
+        second_half.push_back(tp[i + lenght / 2]);
+      }
+
+      for (std::string::const_iterator n = first_half.cbegin();
+           n != first_half.cend(); n++) {
+        if (found_common_letter) {
+          break;
+        }
+        for (std::string::const_iterator m = second_half.cbegin();
+             m != second_half.cend(); m++)
+          if (*n == *m) {
+            common_letter = *m;
+            found_common_letter = true;
+            break;
+          }
+      }
+      if (int(common_letter) < 91)
+        common_letter_value = int(common_letter) - 38;
+      else {
+        common_letter_value = int(common_letter) - 96;
+      }
+      std::cout << common_letter << " "<< int(common_letter_value)
+                << std::endl;
+      priority_sum += common_letter_value;
+    }
+
+    std::cout << "Part 1: " << priority_sum << std::endl;
+    file.close();
+  }
+}
