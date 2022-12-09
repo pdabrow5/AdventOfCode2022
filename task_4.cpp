@@ -45,7 +45,6 @@ void task4(std::string filename) {
       b1 = numbers[1];
       a2 = numbers[2];
       b2 = numbers[3];
-      //std::cout << tp;
       if ((a1 <= a2 and b2 <= b1) or (a2 <= a1 and b1 <= b2) ) {
         ++fully_contained;
       } 
@@ -58,3 +57,4 @@ void task4(std::string filename) {
     file.close();
   }
 }
+

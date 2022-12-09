@@ -146,12 +146,14 @@
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="tasks.cpp" />
     <ClCompile Include="task_4.cpp" />
+    <ClCompile Include="tast_5.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="1st_task.txt" />
     <Text Include="2nd_task.txt" />
     <Text Include="3rd_task.txt" />
     <Text Include="4th_task.txt" />
+    <Text Include="5th_task.txt" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="tasks.h" />

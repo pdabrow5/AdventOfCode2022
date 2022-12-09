@@ -5,6 +5,7 @@
 #include <vector>
 #include <algorithm>
 #include "tasks.h"
+#include <sstream>
 
 int main()
 {   
@@ -12,7 +13,8 @@ int main()
     //task2("2nd_task.txt");
     //task3_1("3rd_task.txt");
     //task3_2("3rd_task.txt");
-    task4("4th_task.txt");
+    //task4("4th_task.txt");
+    //("5th_task.txt");
     
     return 0;
 }

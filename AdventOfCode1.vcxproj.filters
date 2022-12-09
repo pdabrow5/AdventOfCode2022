@@ -24,6 +24,9 @@
     <ClCompile Include="task_4.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="tast_5.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="1st_task.txt">
@@ -36,6 +39,9 @@
       <Filter>Resource Files</Filter>
     </Text>
     <Text Include="4th_task.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="5th_task.txt">
       <Filter>Resource Files</Filter>
     </Text>
   </ItemGroup>
