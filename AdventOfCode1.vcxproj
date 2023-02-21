@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -146,7 +146,11 @@
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="tasks.cpp" />
     <ClCompile Include="task_4.cpp" />
-    <ClCompile Include="tast_5.cpp" />
+    <ClCompile Include="task_6.cpp" />
+    <ClCompile Include="task_5.cpp" />
+    <ClCompile Include="task_7.cpp" />
+    <ClCompile Include="task_8.cpp" />
+    <ClCompile Include="task_9.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="1st_task.txt" />
@@ -154,9 +158,16 @@
     <Text Include="3rd_task.txt" />
     <Text Include="4th_task.txt" />
     <Text Include="5th_task.txt" />
+    <Text Include="6th_task.txt" />
+    <Text Include="7th_task.txt" />
+    <Text Include="8th_task.txt" />
+    <Text Include="9th_task.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="tasks.h" />
+    <ClInclude Include="tasks_1-6.h" />
+    <ClInclude Include="task_7.h" />
+    <ClInclude Include="task_8.h" />
+    <ClInclude Include="task_9.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

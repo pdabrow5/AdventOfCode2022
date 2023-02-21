@@ -24,8 +24,20 @@
     <ClCompile Include="task_4.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="tast_5.cpp">
+    <ClCompile Include="task_5.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="task_6.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="task_7.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="task_8.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="task_9.cpp">
+      <Filter>Header Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -44,9 +56,30 @@
     <Text Include="5th_task.txt">
       <Filter>Resource Files</Filter>
     </Text>
+    <Text Include="6th_task.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="7th_task.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="8th_task.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="9th_task.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="tasks.h">
+    <ClInclude Include="tasks_1-6.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="task_7.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="task_8.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="task_9.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
